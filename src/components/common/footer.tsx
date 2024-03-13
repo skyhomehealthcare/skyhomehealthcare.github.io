@@ -43,10 +43,7 @@ const Footer: React.FC = () => {
           Hours
         </Text>
         <Text styles={{ root: { color: 'white' } }}>
-          Monday – Thursday: 9:00am – 5:00pm
-        </Text>
-        <Text styles={{ root: { color: 'white' } }}>
-          Friday: 9:00am – 4:00pm
+          Monday – Friday: 9:00am – 5:00pm
         </Text>
         <Text styles={{ root: { color: 'white' } }}>
           On-Call Clinician Available 24/7
