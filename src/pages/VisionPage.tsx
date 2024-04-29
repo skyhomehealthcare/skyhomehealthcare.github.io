@@ -2,20 +2,36 @@ import React from 'react'
 import { Stack, Text } from '@fluentui/react'
 import Header from '../components/common/header'
 import Footer from '../components/common/footer'
+import useMediaQuery from '../components/UseMediaQuery'
 
 function VisionPage() {
+  const isMobile = useMediaQuery('(max-width: 768px)')
   return (
     <div>
       <Header image={'banner3'} />
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{ childrenGap: isMobile ? 0 : 20, padding: isMobile ? 20 : 40 }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Welcome to SKY HOME HEALTH CARE LLC.</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
+          <Text variant={isMobile ? 'large' : 'superLarge'}>
+            Welcome to SKY HOME HEALTH CARE LLC.
+          </Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             We are dedicated to providing you with quality care services and are
             committed to ensuring your rights and privileges as a health care

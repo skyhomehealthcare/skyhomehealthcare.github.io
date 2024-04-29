@@ -1,14 +1,3 @@
-.body {
-  font-family: 'Nunito', sans-serif;
-  width: 40%;
-  padding: 50;
-}
-
-.subHeader {
-  font-family: 'Nunito', sans-serif;
-  width: 40%;
-}
-
 .App {
   text-align: center;
   padding: 20px;
@@ -28,25 +17,296 @@
   z-index: 1000; 
 }
 
-.headerText {
-  color: #202020; /* Change to your theme's primary color */
-  text-decoration: none; 
-  height: 40%;
-  font-weight: 1000;
-  font-family: 'Montserrat', sans-serif;
-  z-index: 2;
+
+/*desktop*/
+@media (min-width: 768px) {
+  .logo {
+    height: 60px; /* Adjust based on your logo's size */
+    width: auto; /* Maintains aspect ratio */
+  }
+  
+  .headerSubText {
+    text-decoration: none; 
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+  }
+
+  .headerText {
+    color: #202020; /* Change to your theme's primary color */
+    text-decoration: none; 
+    height: 40%;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+  }
+
+  .body {
+    font-family: 'Nunito', sans-serif;
+    width: 40%;
+    padding: 50;
+  }
+
+  .subHeader {
+    font-family: 'Nunito', sans-serif;
+    width: 40%;
+  }
+
+  .body {
+    font-family: 'Nunito', sans-serif;
+    width: 40%;
+    padding: 50;
+  }
+
+  .banner1 {
+    background-image: url('/public/images/banner1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
+  }
+  
+  .banner2 {
+    background-image: url('/public/images/banner2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
+  }
+  
+  .banner3 {
+    background-image: url('/public/images/banner3.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
+  }
+  
+  .banner4 {
+    background-image: url('/public/images/banner4.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
+  }
 }
 
-.headerSubText {
-  text-decoration: none; 
-  font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
-  z-index: 2;
-}
+/*mobile*/
+@media (max-width: 768px) { 
+  .logo {
+    height: 50px; /* Adjust based on your logo's size */
+    width: auto; /* Maintains aspect ratio */
+  }
 
-.logo {
-  height: 60px; /* Adjust based on your logo's size */
-  width: auto; /* Maintains aspect ratio */
+  .headerText {
+    color: #202020; /* Change to your theme's primary color */
+    text-decoration: none; 
+    font-size: 23px;
+    height: 40%;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+  }
+
+  .headerSubText {
+    text-decoration: none; 
+    font-size: 10px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+  }
+
+  .body {
+    font-family: 'Nunito', sans-serif;
+    width: 62%;
+    padding: 50;
+  }  
+
+  .subHeader {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    width: 30%;
+  }
+
+  .close-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .line1, .line2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 3px;
+    height: 30px;
+    background-color: #333;
+    transform-origin: center;
+  }
+  
+  .line1 {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .line2 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  .banner1 {
+    background-image: url('/public/images/banner1m.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: -3;
+  }
+  
+  .banner1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 50%);
+  }
+  
+  .banner2 {
+    background-image: url('/public/images/banner2m.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 70%);
+  }
+  
+  .banner3 {
+    background-image: url('/public/images/banner3m.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 30%);
+  }
+  
+  .banner4 {
+    background-image: url('/public/images/banner4m.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change this based on your design */
+  }
+  
+  .banner4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 30%);
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%; /* Center vertically, adjust as needed */
+    left: 50%; /* Center horizontally, adjust as needed */
+    transform: translate(-50%, -50%); /* Adjust positioning to true center */
+    color: white; /* Assuming white text for visibility */
+    width: 100%; /* Ensures the text is contained within the header */
+    text-align: center; /* Centers the text horizontally */
+  }
 }
 
 .navbar {
@@ -85,103 +345,9 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.banner1 {
-  background-image: url('/public/images/banner1.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white; /* Change this based on your design */
-}
-
-.banner1::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 80%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
-}
-
-.banner2 {
-  background-image: url('/public/images/banner2.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white; /* Change this based on your design */
-}
-
-.banner2::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 80%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
-}
-
-.banner3 {
-  background-image: url('/public/images/banner3.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white; /* Change this based on your design */
-}
-
-.banner3::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 80%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
-}
-
-.banner4 {
-  background-image: url('/public/images/banner4.jpeg');
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white; /* Change this based on your design */
-}
-
-.banner4::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 80%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.465) 0%,rgba(255,255,255,0) 100%);
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -195,15 +361,77 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(-10px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1s, transform 1s;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 1500ms, transform 1500ms;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 30px;       /* Width of the menu lines */
+  height: 3px;       /* Height of the menu lines */
+  background-color: #333; /* Color of the menu lines */
+  margin: 6px 0;     /* Spacing between the lines */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Base styles for the loading screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* ensure it's above other content */
+  opacity: 1;
+  animation: fadeOut 1500ms ease-out forwards; /* animation to fade out */
+}
+
+/* Spinner or loading indicator styles */
+.loading-screen::before {
+  content: '';
+  border: 5px solid #f3f3f3; /* Light grey border for the loader part */
+  border-top: 5px solid #3498db; /* Blue color for the spinning part */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* spinning animation */
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Keyframes for fade-out animation */
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
 }

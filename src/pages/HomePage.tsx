@@ -1,21 +1,39 @@
-import React from 'react'
 import { Stack, Text } from '@fluentui/react'
 import Header from '../components/common/header'
 import Footer from '../components/common/footer'
+import useMediaQuery from '../components/UseMediaQuery'
 
 function HomePage() {
+  const isMobile = useMediaQuery('(max-width: 768px)')
   return (
     <div>
       <Header image={'banner1'} />
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{
+          childrenGap: isMobile ? 0 : 20,
+          padding: isMobile ? 20 : 40,
+        }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Care You Can Trust</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
+          <Text variant="superLarge" className="subHeader">
+            Care You Can Trust
+          </Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             Our team of professionals are dedicated to offering tailored care
             right at your doorstep. Whether you're recuperating from surgery,

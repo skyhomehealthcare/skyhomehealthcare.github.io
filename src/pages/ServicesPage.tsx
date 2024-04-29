@@ -2,20 +2,34 @@ import React from 'react'
 import { Stack, Text } from '@fluentui/react'
 import Header from '../components/common/header'
 import Footer from '../components/common/footer'
+import useMediaQuery from '../components/UseMediaQuery'
 
 function ServicesPage() {
+  const isMobile = useMediaQuery('(max-width: 768px)')
   return (
     <div>
       <Header image={'banner4'} />
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{ childrenGap: isMobile ? 0 : 20, padding: isMobile ? 10 : 40 }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Daily Living</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
+          <Text variant={isMobile ? 'large' : 'superLarge'}>Daily Living</Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             We provide personalized in-home support covering live-in, hourly, or
             overnight home health aide assistance. From meal preparation and
@@ -28,13 +42,25 @@ function ServicesPage() {
       </Stack>
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{ childrenGap: isMobile ? 0 : 20, padding: isMobile ? 10 : 40 }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Medication</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
+          <Text variant={isMobile ? 'large' : 'superLarge'}>Medication</Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             We simplify the complexity of medication administration into a
             fail-safe process. By closely coordinating with your physician, we
@@ -47,13 +73,27 @@ function ServicesPage() {
       </Stack>
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{ childrenGap: isMobile ? 0 : 20, padding: isMobile ? 5 : 40 }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Chronic Disease Management</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 3 : 20,
+          }}
+        >
+          <Text variant={isMobile ? 'mediumPlus' : 'superLarge'}>
+            Chronic Disease Management
+          </Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             Our care team provides non-clinical support for individuals managing
             chronic conditions at home, enhancing comfort and lifestyle quality
@@ -65,13 +105,27 @@ function ServicesPage() {
       </Stack>
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{ childrenGap: isMobile ? 0 : 20, padding: isMobile ? 10 : 40 }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Restorative Therapy</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
+          <Text variant={isMobile ? 'large' : 'superLarge'}>
+            Restorative Therapy
+          </Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             Our staff supports your restorative journey with personalized
             assistance alongside professional therapy sessions in physical,
@@ -83,13 +137,25 @@ function ServicesPage() {
       </Stack>
       <Stack
         horizontal
-        tokens={{ childrenGap: 20, padding: 40 }}
+        tokens={{ childrenGap: isMobile ? 0 : 20, padding: isMobile ? 10 : 40 }}
         horizontalAlign="space-between"
       >
-        <Stack className="subHeader" tokens={{ childrenGap: 20, padding: 20 }}>
-          <Text variant="superLarge">Wound Care</Text>
+        <Stack
+          className="subHeader"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
+          <Text variant={isMobile ? 'large' : 'superLarge'}>Wound Care</Text>
         </Stack>
-        <Stack className="body" tokens={{ childrenGap: 20, padding: 20 }}>
+        <Stack
+          className="body"
+          tokens={{
+            childrenGap: isMobile ? 0 : 20,
+            padding: isMobile ? 0 : 20,
+          }}
+        >
           <Text variant="large">
             Focusing on comfort and healing, our team offers supportive care for
             those with chronic wounds, ensuring a clean, safe environment and
