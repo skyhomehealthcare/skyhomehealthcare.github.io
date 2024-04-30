@@ -48,7 +48,7 @@ function Header(props: HeaderProps) {
         {isMobile ? (
           <>
             <Stack
-              styles={{ root: { paddingRight: 50, paddingTop: 10, zIndex: 3 } }}
+              styles={{ root: { paddingRight: 50, paddingTop: 0, zIndex: 3 } }}
             >
               <div className="hamburger-menu" onClick={openPanel}>
                 <span></span>

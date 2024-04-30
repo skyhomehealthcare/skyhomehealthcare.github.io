@@ -4,25 +4,24 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.header {
-  font-weight: 700;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-top: 20px;
-  width: 100%;
-  height: 95%;
-  font-family: 'Montserrat', sans-serif;
-  position: sticky;
-  top: 0;
-  z-index: 1000; 
-}
-
-
 /*desktop*/
 @media (min-width: 768px) {
   .logo {
     height: 60px; /* Adjust based on your logo's size */
     width: auto; /* Maintains aspect ratio */
+  }
+
+  .header {
+    font-weight: 700;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 95%;
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
   }
   
   .headerSubText {
@@ -59,7 +58,7 @@
   }
 
   .banner1 {
-    background-image: url('/public/images/banner1.jpeg');
+    background-image: url('/public/images/banner1.png');
     background-size: cover;
     background-position: center;
     height: 600px;
@@ -150,14 +149,27 @@
 /*mobile*/
 @media (max-width: 768px) { 
   .logo {
-    height: 50px; /* Adjust based on your logo's size */
+    height: 33px; /* Adjust based on your logo's size */
     width: auto; /* Maintains aspect ratio */
+  }
+
+  .header {
+    font-weight: 700;
+    justify-content: space-between;
+    padding-left: 4px;
+    padding-top: 20px;
+    width: 100%;
+    height: 95%;
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
   }
 
   .headerText {
     color: #202020; /* Change to your theme's primary color */
     text-decoration: none; 
-    font-size: 23px;
+    font-size: 15px;
     height: 40%;
     font-weight: 1000;
     font-family: 'Montserrat', sans-serif;
@@ -166,7 +178,7 @@
 
   .headerSubText {
     text-decoration: none; 
-    font-size: 10px;
+    font-size: 7px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     z-index: 2;
@@ -207,6 +219,21 @@
   
   .line2 {
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 30px;       /* Width of the menu lines */
+    height: 3px;       /* Height of the menu lines */
+    background-color: #333; /* Color of the menu lines */
+    margin: 6px 0;     /* Spacing between the lines */
+    transition: all 0.3s ease-in-out;
   }
   
   .banner1 {
@@ -381,21 +408,6 @@
   opacity: 0;
   transform: translateX(10px);
   transition: opacity 1500ms, transform 1500ms;
-}
-
-.hamburger-menu {
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-}
-
-.hamburger-menu span {
-  display: block;
-  width: 30px;       /* Width of the menu lines */
-  height: 3px;       /* Height of the menu lines */
-  background-color: #333; /* Color of the menu lines */
-  margin: 6px 0;     /* Spacing between the lines */
-  transition: all 0.3s ease-in-out;
 }
 
 /* Base styles for the loading screen */
