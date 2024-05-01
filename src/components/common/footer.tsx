@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         styles={{ root: { width: isMobile ? '100%' : '20%' } }}
       >
         <Text variant="xLarge" styles={{ root: { color: 'white' } }}>
-          Non-Descrimination Policy
+          Non-Discrimination Policy
         </Text>
         <Text styles={{ root: { color: 'white' } }}>
           Our commitment is to services delivered in an inclusive, respectful
