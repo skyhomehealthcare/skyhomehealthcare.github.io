@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           Contact
         </Text>
         <Text styles={{ root: { color: 'white' } }}>
-          info@skyhomehealthcarellc.com{' '}
+          info@skyhomehealthcare.com{' '}
         </Text>
         <Text styles={{ root: { color: 'white' } }}>Phone: (571) 833-8342</Text>
         <Text styles={{ root: { color: 'white' } }}>Fax: (703) 995-0297</Text>
